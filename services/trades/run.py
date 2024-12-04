@@ -11,7 +11,7 @@ def main(
     kraken_api: Union[KrakenWebsocketAPI, KrakenMockAPI]
 ):
     """
-    It does 2 things:
+    It does 2 things::
     1. Reads trades from the Kraken API and
     2. Pushes them to a Kafka topic.
 
