@@ -4,4 +4,10 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "loguru>=0.7.2",
+    "pydantic-settings>=2.6.1",
+    "pydantic>=2.9.2",
+    "quixstreams==3.3.0",
+    "websocket-client>=1.8.0",
+]
