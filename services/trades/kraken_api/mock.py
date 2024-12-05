@@ -5,6 +5,7 @@ from time import sleep
 
 from .trade import Trade
 
+
 class KrakenMockAPI:
     """
     A mock implementation of the Kraken API for testing purposes.
@@ -24,8 +25,20 @@ class KrakenMockAPI:
         - Includes a delay of 1 second to mimic real-world API latency.
         """
         mock_trades = [
-            Trade(pair=self.pair, price=0.5117, volume=40.0, timestamp=datetime(2023, 9, 25, 7, 49, 37, 708706), timestamp_ms=172719357708706),
-            Trade(pair=self.pair, price=0.5317, volume=40.0, timestamp=datetime(2023, 9, 25, 7, 49, 37, 708706), timestamp_ms=172719357708706),
+            Trade(
+                pair=self.pair,
+                price=0.5117,
+                volume=40.0,
+                timestamp=datetime(2023, 9, 25, 7, 49, 37, 708706),
+                timestamp_ms=172719357708706,
+            ),
+            Trade(
+                pair=self.pair,
+                price=0.5317,
+                volume=40.0,
+                timestamp=datetime(2023, 9, 25, 7, 49, 37, 708706),
+                timestamp_ms=172719357708706,
+            ),
         ]
 
         sleep(1)
