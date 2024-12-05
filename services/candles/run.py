@@ -19,6 +19,8 @@ def init_candle(trade: dict) -> dict:
     }
 
 
+
+
 def update_candle(candle: dict, trade: dict) -> dict:
     """
     Update the candle with the latest trade
