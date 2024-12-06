@@ -44,3 +44,13 @@ subtrade.run_mock_2.py and subtrade.kraken_api.mock_2.py is the template.
 ## git
 git remote set-url origin git@github.com:carrickcheah/newnew.git
 git push -u origin main
+
+
+
+##
+
+other
+
+
+ruff check . --fix
+pre-commit run --all-files

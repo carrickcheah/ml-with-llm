@@ -42,7 +42,7 @@ Use ruff check to check.
        - Check version | Bash$ pre-commit --version  
        - Create a file in root | .pre-commit-config.yaml 
        - Bash$ pre-commit install | go the pre-commit webstie follow instruction.  
-
+       - Bash$ pre-commit run --all-files
 
 ## Build second microservice: candles
 

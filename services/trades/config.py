@@ -1,5 +1,6 @@
-from pydantic_settings import BaseSettings, SettingsConfigDict
 from typing import List
+
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Config(BaseSettings):
@@ -9,7 +10,7 @@ class Config(BaseSettings):
 
     # Load settings from an `.env` file with UTF-8 encoding.
     model_config = SettingsConfigDict(
-        env_file="settings.env", env_file_encoding="utf-8"
+        env_file='settings.env', env_file_encoding='utf-8'
     )
 
     # Required configuration fields:
