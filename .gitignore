@@ -6,6 +6,7 @@ __pycache__/
 
 # C extensions
 *.so
+services/technical-indicators/ta-lib/
 
 # Distribution / packaging
 .Python
