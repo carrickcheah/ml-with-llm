@@ -41,6 +41,10 @@ refer session_03b.md
 
 
 
+## To feature store
+Read message from topic and push data to feature store
+
+
 
 
 
