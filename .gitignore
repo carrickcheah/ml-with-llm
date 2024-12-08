@@ -4,7 +4,6 @@ __pycache__/
 *$py.class
 .ruff_cache/
 
-.readme
 # C extensions
 *.so
 services/technical-indicators/ta-lib/

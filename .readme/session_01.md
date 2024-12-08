@@ -54,3 +54,9 @@ other
 
 ruff check . --fix
 pre-commit run --all-files
+
+
+ruff check --fix .
+ruff format .
+git add .
+git commit -m "Fix trailing whitespace in docstring"
