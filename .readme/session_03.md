@@ -15,14 +15,19 @@ copy the trades dockerfile since it is same. and update Makefile
         uv add quixstreams loguru pydantic-settings
 
 - Install ta-lib  
-        Linux  
-        Download ta-lib-0.4.0-src.tar.gz and:  
+        Bash$ uv add TA-Lib
+        i get this version ta-lib>=0.5.1 , but not limit to.
 
-        $ tar -xzf ta-lib-0.4.0-src.tar.gz  
-        $ cd ta-lib/  
-        $ ./configure --prefix=/usr  
-        $ make  
-        $ sudo make install  
+if canot, thn add
+Linux
+Download ta-lib-0.4.0-src.tar.gz and:
+
+$ tar -xzf ta-lib-0.4.0-src.tar.gz
+$ cd ta-lib/
+$ ./configure --prefix=/usr
+$ make
+$ sudo make install
+
 
 
 - Just use quixstream connect input n output first.
