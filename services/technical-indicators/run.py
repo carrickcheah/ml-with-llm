@@ -3,8 +3,6 @@ from loguru import logger
 from quixstreams import Application
 from technical_indicators import compute_indicators
 
-# from tech2 import compute_indicators
-
 
 def main(
     kafka_broker_address: str,
@@ -26,6 +24,7 @@ def main(
         kafka_output_topic: The topic to send technical indicators to
         kafka_consumer_group: The consumer group for the kafka consumer
         max_candles_in_state: The maximum number of candles to keep in the state
+        candle_seconds: The number of seconds per candle
     Returns:
         None
     """
@@ -47,6 +46,10 @@ def main(
     )
     # Create a Streaming DataFrame so we can start transforming data in real time
     sdf = app.dataframe(topic=input_topic)
+
+    # We only keep the candles with the same window size as the candle_seconds
+    # Thanks Carlo!
+    sdf = sdf[sdf['candle_seconds'] == candle_seconds]
 
     # Update the list of candles in the state
     sdf = sdf.apply(update_candles, stateful=True)

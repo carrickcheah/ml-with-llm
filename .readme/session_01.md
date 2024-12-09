@@ -52,11 +52,11 @@ git push -u origin main
 other
 
 
-ruff check . --fix
+ruff check --fix .
+ruff format .
 pre-commit run --all-files
 
 
-ruff check --fix .
-ruff format .
+
 git add .
 git commit -m "Fix trailing whitespace in docstring"
