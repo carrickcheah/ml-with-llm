@@ -17,5 +17,12 @@ class HopsworksCredentials(BaseSettings):
     hopsworks_api_key: str
 
 
+class AwsCredentials(BaseSettings):
+    model_config = SettingsConfigDict(env_file='aws.env')
+    aws_access_key_id: str
+    aws_secret_access_key: str
+
+
 config = Settings()
 hopsworks_credentials = HopsworksCredentials()
+aws_credentials = AwsCredentials()
