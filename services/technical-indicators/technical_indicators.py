@@ -100,4 +100,7 @@ def compute_indicators(
         **candle,
         **indicators,
     }
+
+    # breakpoint()
+
     return final_message

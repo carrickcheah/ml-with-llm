@@ -105,7 +105,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-demo
+
 
 # Spyder project settings
 .spyderproject
@@ -175,7 +175,10 @@ ca.cert
 .venv/
 certificates/
 .vscode/
-zxxx.txt
+
 
 comet.credentials.env
 hopsworks.credentials.env
+anthropic.env
+hopsworks_credentials.env
+aws.env

@@ -22,49 +22,47 @@ def update_candles(
         candle: The latest candle
         state: The state of our application
         max_candles_in_state: The maximum number of candles to keep in the state
-
     Returns:
         None
     """
-
-    # Retrieve the list of existing candles from the application state.
-    # If no candles exist in the state, initialize it as an empty list.
+    # Get the list of candles from our state
     candles = state.get('candles', default=[])
 
-    # If the record book is empty, we just append the new candle
     if not candles:
+        # If the state is empty, we just append the latest candle to the list
         candles.append(candle)
-
-    # If same_window is True, then we replace the last candle with the new candle
-    # if same_window is False, then we append the new candle to the list
     elif same_window(candle, candles[-1]):
+        # Replace the last candle in the list with the latest candle
         candles[-1] = candle
     else:
+        # Append the latest candle to the list
         candles.append(candle)
 
-    # If the number of candles is greater than the maximum number of candles we want to keep,
-    # we remove the oldest candle
+    # If the total number of candles in the state is greater than the maximum number of
+    # candles we want to keep, we remove the oldest candle from the list
     if len(candles) > MAX_CANDLES_IN_STATE:
         candles.pop(0)
+
+    # TODO: we should check the candles have no missing windows
+    # This can happen for low volume pairs. In this case, we could interpoalte the missing windows
 
     logger.debug(f'Number of candles in state for {candle["pair"]}: {len(candles)}')
 
     # Update the state with the new list of candles
     state.set('candles', candles)
 
-    # Return the updated candle
     return candle
 
 
 def same_window(candle_1: dict, candle_2: dict) -> bool:
     """
-    Check if candle_1 and candle_2 belong to the same time window and trading pair.
+    Check if the candle 1 and candle 2 are in the same window.
 
     Args:
         candle_1: The first candle
         candle_2: The second candle
     Returns:
-        True if the candles are in the same window and pairs, False otherwise
+        True if the candles are in the same window, False otherwise
     """
     return (
         candle_1['window_start_ms'] == candle_2['window_start_ms']

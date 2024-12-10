@@ -10,19 +10,15 @@ class Settings(BaseSettings):
 
     feature_group_name: str
     feature_group_version: int
+    feature_group_primary_keys: list[str]
+    feature_group_event_time: str
 
 
 class HopsworksCredentials(BaseSettings):
-    model_config = SettingsConfigDict(env_file='credentials.env')
+    model_config = SettingsConfigDict(env_file='hopsworks_credentials.env')
     hopsworks_api_key: str
-
-
-class AwsCredentials(BaseSettings):
-    model_config = SettingsConfigDict(env_file='aws.env')
-    aws_access_key_id: str
-    aws_secret_access_key: str
+    hopsworks_project_name: str
 
 
 config = Settings()
 hopsworks_credentials = HopsworksCredentials()
-aws_credentials = AwsCredentials()
