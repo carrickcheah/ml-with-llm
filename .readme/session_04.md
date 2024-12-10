@@ -20,6 +20,35 @@
 
       - Check redpanda localhost. Now it should appear.  
 
+## to-feature-store/
+
+Do 2 things:  
+1) read data from module technical-indicators  
+2) Publish data to hopsworks feature store  
+
+to-feature-store/
+ │
+ ├── run.py/   
+ ├── sinks.py/
+ ├── config.py/
+ ├── settings.py/   
+ ├── Makefile/   
+ ├── Dockerfile/
+ ├── credentials.env/   
+ ├── hopsworks_credentials.env/
+ 
+                      		
+
+
+
+##  Ingesting historical trade data from Kraken
+
+ - Reason we create backfill pipeline: Need a lot of data to train ML Model.  
+ - Use the same mircoservices, adjust code only.
+
+ Guildlines:  
+    Visit Kraken API- click RESTAPI
+
 
 
 

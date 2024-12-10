@@ -10,5 +10,6 @@ dependencies = [
     "pydantic-settings>=2.6.1",
     "quixstreams>=3.4.0",
     "referencing>=0.35.1",
-    "hopsworks>=4.1.4",
+    "hopsworks>=4.1.3"
+
 ]

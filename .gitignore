@@ -175,7 +175,7 @@ ca.cert
 .venv/
 certificates/
 .vscode/
-
+.readme
 
 comet.credentials.env
 hopsworks.credentials.env
