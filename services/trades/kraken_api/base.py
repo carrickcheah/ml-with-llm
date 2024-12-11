@@ -6,7 +6,6 @@ from .trade import Trade
 # this class willbe use in websocket.py
 
 
-# Blueprint (Class)
 # TradesAPI(ABC): Think of TradesAPI as a blueprint for a special kind of LEGO robot.
 # The (ABC) part means it's an Abstract Base Class,
 

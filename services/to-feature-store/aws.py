@@ -5,6 +5,8 @@ from quixstreams.sinks.community.file import FileSink
 from quixstreams.sinks.community.file.destinations import S3Destination
 from quixstreams.sinks.community.file.formats import JSONFormat
 
+# ignore. it is my personal test file. the file is work. just keeo for in case.
+
 
 def main(
     kafka_broker_address: str,
