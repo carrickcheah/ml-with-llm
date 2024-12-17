@@ -1,0 +1,161 @@
+[33mcommit 8373a4936b52294ab4eb6e1f31e7d22210d889cf[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: carrickcheah <carrick113@gmail.com>
+Date:   Tue Dec 17 08:14:58 2024 +0800
+
+    update
+
+[33mcommit 805dcf4462fa67341295fb0e20f9e5c894001829[m
+Author: carrickcheah <carrick113@gmail.com>
+Date:   Tue Dec 17 08:05:59 2024 +0800
+
+    update
+
+[33mcommit a073d8f852a81b2b8b8fb5226dc50bcb90f0df28[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: root <carrick113@gmail.com>
+Date:   Thu Dec 12 00:35:35 2024 +0800
+
+    update
+
+[33mcommit ca8e2ee92336a6382d2bd5f970543333da61dce7[m
+Author: root <carrick113@gmail.com>
+Date:   Thu Dec 12 00:33:02 2024 +0800
+
+    update
+
+[33mcommit a4bd54d7333a6662e2b49378694ac20976191849[m
+Author: root <carrick113@gmail.com>
+Date:   Wed Dec 11 06:10:58 2024 +0800
+
+    update
+
+[33mcommit 3faad1b0ffb22045e9446ba088088c132b73e5a0[m
+Author: root <carrick113@gmail.com>
+Date:   Tue Dec 10 21:35:11 2024 +0800
+
+    update
+
+[33mcommit f01d764ba44d508b407d740ea8223a371b5f4894[m
+Author: root <carrick113@gmail.com>
+Date:   Tue Dec 10 04:28:37 2024 +0800
+
+    init hopsworks
+
+[33mcommit 83691c786de222bd0b43aee6f22cd0659b9a6193[m
+Author: root <carrick113@gmail.com>
+Date:   Tue Dec 10 02:04:36 2024 +0800
+
+    add partitions for trades
+
+[33mcommit 42c329636b1bf8d0845f33fd04d6ced88982042c[m
+Author: root <carrick113@gmail.com>
+Date:   Mon Dec 9 02:19:10 2024 +0800
+
+    create new module. push feature
+
+[33mcommit d8d0ca0e3553cc1f49a325ebe54e55da1a66050c[m
+Author: root <carrick113@gmail.com>
+Date:   Mon Dec 9 00:53:32 2024 +0800
+
+    dockerize the m-service
+
+[33mcommit 49b5e6b927a003c707a2ad86565e937e8eafe9a3[m
+Author: root <carrick113@gmail.com>
+Date:   Mon Dec 9 00:21:23 2024 +0800
+
+    complete tech indicators
+
+[33mcommit 3a2de71c86e2e3bb4bd24b2cac27ac6afdf780d3[m
+Author: root <carrick113@gmail.com>
+Date:   Sun Dec 8 08:14:33 2024 +0800
+
+    update
+
+[33mcommit 8401d41ed8b112f3c9bce0e667e1e464b3ab3a74[m
+Author: root <carrick113@gmail.com>
+Date:   Sun Dec 8 08:13:26 2024 +0800
+
+    Fix trailing whitespace in docstring
+
+[33mcommit a90d94e533e28a1c0aac467a86fcb224ade186d4[m
+Author: root <carrick113@gmail.com>
+Date:   Sat Dec 7 05:21:37 2024 +0800
+
+    create price predictor module
+
+[33mcommit 9afba561afc3b42a17a5a52adcfdfc31c85b9aad[m
+Author: root <carrick113@gmail.com>
+Date:   Fri Dec 6 21:09:30 2024 +0800
+
+    Normalize line endings for pyproject.toml
+
+[33mcommit ee8407ea7f288317321e1215efddb653274347e8[m
+Author: root <carrick113@gmail.com>
+Date:   Fri Dec 6 21:07:31 2024 +0800
+
+    Dockerize candles
+
+[33mcommit eb634914eda38caa573e7dc9b986736a343b82f1[m
+Author: root <carrick113@gmail.com>
+Date:   Fri Dec 6 03:12:46 2024 +0800
+
+    update
+
+[33mcommit 500b4b3d4cbfab22d67a8f2513f7f945404f7a96[m
+Author: root <carrick113@gmail.com>
+Date:   Fri Dec 6 03:04:48 2024 +0800
+
+    create candles. turn raw data into ohlc
+
+[33mcommit 951487ec8096562fd4f2b61ef4e8d02a437ba29c[m
+Author: root <carrick113@gmail.com>
+Date:   Thu Dec 5 22:06:06 2024 +0800
+
+    linting
+
+[33mcommit dce7de58675312a914dcd9fe00d8f5a173e720aa[m
+Author: root <carrick113@gmail.com>
+Date:   Thu Dec 5 08:36:08 2024 +0800
+
+    update read me
+
+[33mcommit 792c6f56bb021186060c803a055982f7f3c19c95[m
+Author: root <carrick113@gmail.com>
+Date:   Thu Dec 5 08:32:59 2024 +0800
+
+    Your commit message
+
+[33mcommit 57378edd9b07f7372c762191b19664c78eb28560[m
+Author: root <root@LAPTOP-O5B60A1O>
+Date:   Thu Dec 5 06:21:12 2024 +0800
+
+    create new m.service
+
+[33mcommit 2298f3012580f833454b6b7b3888359f2dc1a277[m
+Author: carrickcheah <carrick113@gmail.com>
+Date:   Thu Dec 5 05:24:42 2024 +0800
+
+    update
+
+[33mcommit eb1c654a5bdb5e221a7d1c82aea02b540ee6a8f7[m
+Author: root <root@LAPTOP-O5B60A1O>
+Date:   Thu Dec 5 02:50:05 2024 +0800
+
+    completed build dockerfile and optimize it.
+
+[33mcommit 4be3a957abc711bf5a90b601bf3906afef7ba5d7[m
+Author: root <root@LAPTOP-O5B60A1O>
+Date:   Thu Dec 5 02:09:38 2024 +0800
+
+    update the files
+
+[33mcommit 4ad1080a15efc6a9a5dcdf1f78144f35796ff549[m
+Author: root <root@LAPTOP-O5B60A1O>
+Date:   Thu Dec 5 00:19:25 2024 +0800
+
+    Removed nested Git repository and added services as part of the parent repository
+
+[33mcommit f23510b50d72c5c641cc1256d0980074a716cefc[m
+Author: root <root@LAPTOP-O5B60A1O>
+Date:   Thu Dec 5 00:18:26 2024 +0800
+
+    Initial commit for 20241204_WSL_ML
