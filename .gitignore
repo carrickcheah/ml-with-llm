@@ -1,3 +1,30 @@
+# env files
+**/comet.credentials.env
+**/hopsworks.credentials.env
+**/anthropic.env
+**/hopsworks_credentials.env
+**/aws.env
+**/ollama.env
+**/anthropic_credentials.env
+**/openai.env
+**/credentials.env
+**/comet.env
+**/cryptopanic_credentials.env
+
+
+
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -97,16 +124,6 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -170,15 +187,10 @@ ca.cert
 *.pkl
 **/state
 **/setup_credentials.sh
-*.csv
-**/credentials.env
+
 .venv/
 certificates/
 .vscode/
-.readme
 
-comet.credentials.env
-hopsworks.credentials.env
-anthropic.env
-hopsworks_credentials.env
-aws.env
+
+

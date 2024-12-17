@@ -28,5 +28,5 @@ ENV PATH="/app/.venv/bin:$PATH"
 # Reset the entrypoint, don't invoke `uv`
 ENTRYPOINT []
 
-# Presuming there is a `my_app` command provided by the project
+# Run the Python service
 CMD ["uv", "run", "run.py"]
