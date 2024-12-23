@@ -3,9 +3,12 @@ from typing import Literal
 from .base import BaseNewsSignalExtractor
 from .claude import ClaudeNewsSignalExtractor
 from .ollama import OllamaNewsSignalExtractor
+from .openai import OpenAINewsSignalExtractor
 
 
-def get_llm(model_provider: Literal['anthropic', 'ollama']) -> BaseNewsSignalExtractor:
+def get_llm(
+    model_provider: Literal['anthropic', 'ollama', 'openai'],
+) -> BaseNewsSignalExtractor:
     """
     Returns the LLM we want for the news signal extractor
 
@@ -31,6 +34,14 @@ def get_llm(model_provider: Literal['anthropic', 'ollama']) -> BaseNewsSignalExt
         config = OllamaConfig()
 
         return OllamaNewsSignalExtractor(
+            model_name=config.model_name,
+        )
+    elif model_provider == 'openai':
+        from .config import OpenAIConfig
+
+        config = OpenAIConfig()
+
+        return OpenAINewsSignalExtractor(
             model_name=config.model_name,
         )
 

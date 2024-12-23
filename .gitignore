@@ -12,7 +12,7 @@
 **/cryptopanic_credentials.env
 
 
-
+services/news_signal/data
 
 # Environments
 .env

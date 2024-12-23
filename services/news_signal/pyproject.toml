@@ -6,16 +6,16 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "comet-ml>=3.47.5",
+    "datasets>=3.2.0",
     "fire>=0.7.0",
-    "llama-index>=0.12.5",
-    "llama-index-core>=0.12.5",
-    "llama-index-llms-anthropic>=0.5.0",
+    "llama-index>=0.12.8",
+    "llama-index-core>=0.12.8",
+    "llama-index-llms-anthropic>=0.6.3",
     "llama-index-llms-ollama>=0.5.0",
-    "llama-index-llms-openai>=0.3.10",
+    "llama-index-llms-openai>=0.3.12",
     "loguru>=0.7.3",
-    "pydantic>=2.10.3",
+    "pydantic>=2.10.4",
     "pydantic-settings>=2.7.0",
-    "quixstreams>=0.5.7",
     "setuptools>=75.6.0",
-    "unsloth>=2024.12.4",
+    "unsloth>=2024.12.8",
 ]
