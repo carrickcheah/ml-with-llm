@@ -43,36 +43,54 @@ def generate_dataset(
         None
     """
 
-    # load dataset
+    # Load dataset
     df = pd.read_csv(input_file)
     news = df['title'].tolist()
 
-    # random sample of n news
+    # Random sample of n news
     news = random.sample(news, n)
 
-    # llm
+    # LLM
     from llms.factory import get_llm
 
     llm = get_llm(model_provider=model_provider)
 
     from tqdm import tqdm
 
-    for news_item in tqdm(news):
+    for news_item in tqdm(news):  # Iterate through each news item
         try:
             signals = llm.get_signal(news_item)
+
+            # Debugging: Check the type and content of signals
+            print(f'Signals type: {type(signals)}')  # Added to debug
+            print(f'Signals content: {signals}')  # Added to debug
+
+            # Correct handling for signals based on its type
+            if isinstance(signals, list):  # If signals is a list
+                # Process each signal if it has model_dump_json()
+                output_signals = [
+                    signal.model_dump_json()
+                    if hasattr(signal, 'model_dump_json')
+                    else signal
+                    for signal in signals
+                ]
+            else:  # Assume signals is a single object with model_dump_json()
+                output_signals = signals.model_dump_json()
+
+            # Construct the output dictionary
             output = {
                 'instruction': instruction,
                 'input': news_item,
-                'output': signals.model_dump_json(),
+                'output': output_signals,
                 'teacher_model_name': llm.model_name,
             }
 
-            # append to file
+            # Append to the output file
             with open(output_file, 'a') as f:
                 f.write(json.dumps(output) + '\n')
 
         except Exception as e:
-            print(f'Error: {e}')
+            print(f'Error: {e}')  # Log any errors
             continue
 
 
