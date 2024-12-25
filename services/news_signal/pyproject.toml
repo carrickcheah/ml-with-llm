@@ -17,5 +17,7 @@ dependencies = [
     "pydantic>=2.10.4",
     "pydantic-settings>=2.7.0",
     "setuptools>=75.6.0",
+    "transformers>=4.46.3",
+    "trl>=0.13.0",
     "unsloth>=2024.12.8",
 ]

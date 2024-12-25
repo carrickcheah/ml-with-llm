@@ -1438,6 +1438,8 @@ dependencies = [
     { name = "pydantic" },
     { name = "pydantic-settings" },
     { name = "setuptools" },
+    { name = "transformers" },
+    { name = "trl" },
     { name = "unsloth" },
 ]
 
@@ -1455,6 +1457,8 @@ requires-dist = [
     { name = "pydantic", specifier = ">=2.10.4" },
     { name = "pydantic-settings", specifier = ">=2.7.0" },
     { name = "setuptools", specifier = ">=75.6.0" },
+    { name = "transformers", specifier = ">=4.46.3" },
+    { name = "trl", specifier = ">=0.13.0" },
     { name = "unsloth", specifier = ">=2024.12.8" },
 ]
 
