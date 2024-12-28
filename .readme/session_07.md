@@ -16,5 +16,9 @@
 - Extract signals with LLM → dummy LLM  
 - Push signals to the feature store
 
-no 5, part2 . 0813
 
+
+
+Session 7 - 2024-12-16
+Fine tune llama3.2 | 1 billion with Unsloth - Part 3
+17:00
